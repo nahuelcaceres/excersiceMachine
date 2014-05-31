@@ -8,10 +8,10 @@ import javax.persistence.Entity;
 @Entity(name = "exercise_base")
 public class ExerciseBaseEntity extends NameBaseEntity {
 		
-	@Column(name="DURATION", unique=false, nullable = true)
+	@Column(name="DURATION", unique=false, nullable = false)
 	private Integer duration;
 
-	@Column(name="VELOCITY", unique=false, nullable = true)
+	@Column(name="VELOCITY", unique=false, nullable = false)
 	private Integer velocity;
 	
 	public ExerciseBaseEntity() {
