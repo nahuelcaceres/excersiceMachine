@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.MappedSuperclass;
 
 import org.apache.commons.lang.builder.EqualsBuilder;
-
+//a
 @MappedSuperclass
 public class BaseEntity {
 	@Id
