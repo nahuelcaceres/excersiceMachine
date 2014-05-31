@@ -11,7 +11,6 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 @MappedSuperclass
 public class BaseEntity {
 
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ID", unique = true, nullable = false)
