@@ -8,8 +8,7 @@ import javax.persistence.Entity;
 
 @Table(name = "exercise_history")
 @Entity(name = "exercise_history")
-public class ExerciseHistory extends BaseEntity{
-	//TODO: hacer los getters y setters
+public class ExerciseHistoryEntity extends BaseEntity{
 	
 	@Column(name="TIMESTAMP", unique=false, nullable = false)
 	private Date timeStamp;
@@ -20,9 +19,35 @@ public class ExerciseHistory extends BaseEntity{
 	@Column(name="VELOCITY", unique=false, nullable = false)
 	private Integer velocity;
 
-	public ExerciseHistory() {
+	public ExerciseHistoryEntity() {
 		super();
 	}
+	
+	public Date getTimeStamp() {
+		return timeStamp;
+	}
+
+	public void setTimeStamp(Date timeStamp) {
+		this.timeStamp = timeStamp;
+	}
+
+	public Date getDuration() {
+		return duration;
+	}
+
+	public void setDuration(Date duration) {
+		this.duration = duration;
+	}
+
+	public Integer getVelocity() {
+		return velocity;
+	}
+
+	public void setVelocity(Integer velocity) {
+		this.velocity = velocity;
+	}
+
+	
 	
 	
 }
